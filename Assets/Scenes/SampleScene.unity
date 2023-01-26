@@ -284,6 +284,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.1500001
       objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931858, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931862, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_TagString
+      value: Yoshi7
+      objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.37
@@ -498,7 +506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296479483941, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.16
+      value: -6.16
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931856, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: gameManager
@@ -510,7 +518,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931857, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1599998
+      value: -5.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931858, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931862, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_TagString
+      value: Yoshi8
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -518,7 +534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1599998
+      value: -5.16
       objectReference: {fileID: 0}
     - target: {fileID: 8421432298124042048, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_Name
@@ -574,7 +590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432298220288135, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.16
+      value: -6.16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
@@ -613,7 +629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296479483941, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.56
+      value: 4.56
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931856, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: gameManager
@@ -625,7 +641,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931857, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.56
+      value: 5.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931858, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931862, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_TagString
+      value: Yoshi6
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -633,7 +657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.56
+      value: 5.56
       objectReference: {fileID: 0}
     - target: {fileID: 8421432298124042048, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_Name
@@ -689,7 +713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432298220288135, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.56
+      value: 4.56
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
@@ -1235,7 +1259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296479483941, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.31
+      value: -6.31
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931856, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: gameManager
@@ -1247,23 +1271,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931857, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.31
+      value: -5.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931858, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931859, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931862, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_TagString
+      value: Yoshi2
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 256
+      value: 226.6368
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 256
+      value: 222.4384
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.25
+      value: 0.1031
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.31
+      value: -5.4779
       objectReference: {fileID: 0}
     - target: {fileID: 8421432298124042048, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_Name
@@ -1319,7 +1355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432298220288135, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.31
+      value: -6.31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
@@ -1336,7 +1372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296479483941, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.61
+      value: 4.61
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931856, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: gameManager
@@ -1348,7 +1384,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931857, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.61
+      value: 5.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931858, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931862, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_TagString
+      value: Yoshi3
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1356,7 +1400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.61
+      value: 5.61
       objectReference: {fileID: 0}
     - target: {fileID: 8421432298124042048, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_Name
@@ -1412,7 +1456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432298220288135, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.61
+      value: 4.61
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
@@ -1429,7 +1473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296479483941, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.71
+      value: 4.71
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931856, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: gameManager
@@ -1441,7 +1485,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931857, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.71
+      value: 5.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931858, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931862, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_TagString
+      value: Yoshi1
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1449,7 +1501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.71
+      value: 5.71
       objectReference: {fileID: 0}
     - target: {fileID: 8421432298124042048, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_Name
@@ -1505,7 +1557,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432298220288135, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.71
+      value: 4.71
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
@@ -1955,7 +2007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296479483941, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.31
+      value: -6.31
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931856, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: gameManager
@@ -1967,7 +2019,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931857, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.31
+      value: -5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931858, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931862, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_TagString
+      value: Yoshi5
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1975,7 +2035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.31
+      value: -5.31
       objectReference: {fileID: 0}
     - target: {fileID: 8421432298124042048, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_Name
@@ -2031,7 +2091,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8421432298220288135, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.31
+      value: -6.31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
@@ -2056,11 +2116,19 @@ PrefabInstance:
       objectReference: {fileID: 1102545600}
     - target: {fileID: 8421432296609931857, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.31
+      value: -5.29
       objectReference: {fileID: 0}
     - target: {fileID: 8421432296609931857, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.049999952
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931858, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931862, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_TagString
+      value: Yoshi4
       objectReference: {fileID: 0}
     - target: {fileID: 8421432297693575917, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2420,6 +2488,14 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1102545600}
+    - target: {fileID: 8421432296609931858, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421432296609931862, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
+      propertyPath: m_TagString
+      value: Yoshi0
+      objectReference: {fileID: 0}
     - target: {fileID: 8421432298124042048, guid: 67d01eb44912e1440bc9d39749f2b0f2, type: 3}
       propertyPath: m_Name
       value: Hueco

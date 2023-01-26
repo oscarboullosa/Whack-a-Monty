@@ -186,6 +186,7 @@ MonoBehaviour:
   blueYoshi: {fileID: 21300000, guid: 2036ce77340717c4f9c9a0a4fdefb5ab, type: 3}
   heel: {fileID: 21300000, guid: 4df83dfb62dcc6342a537a132635527c, type: 3}
   Smoke: {fileID: 21300000, guid: b8da6034e649dad478c5484b8f52c943, type: 3}
+  gameManager: {fileID: 0}
 --- !u!61 &8421432296609931858
 BoxCollider2D:
   m_ObjectHideFlags: 0

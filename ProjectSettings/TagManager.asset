@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Yoshi0
+  - Yoshi1
+  - Yoshi2
+  - Yoshi3
+  - Yoshi4
+  - Yoshi5
+  - Yoshi6
+  - Yoshi7
+  - Yoshi8
   layers:
   - Default
   - TransparentFX

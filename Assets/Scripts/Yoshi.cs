@@ -12,10 +12,12 @@ public class Yoshi : MonoBehaviour
 
     [Header("GameManager")]
     [SerializeField] private GameManager gameManager;
-    //Esconderlo
-    private Vector2 startPosition = new Vector2(0f, -2.56f); //-2.56f Por un reajuste de los píxeles
-    private Vector2 endPosition = Vector2.zero;
-    //Durante cuanto tiempo enseñamos a Yoshi
+
+    // The offset of the sprite to hide it.
+    private Vector2 startPosition = new Vector2(1000f, 1000f);
+    //private Vector2 endPosition = Vector2.zero;
+    private Vector2 endPosition = new Vector2(1200f, 1200f);
+    // How long it takes to show a mole.
     private float showDuration = 0.5f;
     private float duration = 1f;
 
@@ -33,19 +35,77 @@ public class Yoshi : MonoBehaviour
     private float heelRate = 0f;
     private int lives;
     private int yoshiIndex = 0;
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        boxCollider2D = GetComponent<BoxCollider2D>();
+        boxOffset = boxCollider2D.offset;
+        boxSize = boxCollider2D.size;
+        
+    boxOffsetHidden = new Vector2(boxOffset.x, -startPosition.y / 2f);
+        boxSizeHidden = new Vector2(boxSize.x, 0f);
+
+        switch (gameObject.tag)
+        {
+            case "Yoshi0":
+                startPosition = new Vector2(0f, -2.45f);
+                endPosition = new Vector2(0f, 0f);
+                
+                break;
+            case "Yoshi1":
+                startPosition = new Vector2(0f, 1.26f);
+                endPosition = new Vector2(0f, 5.71f);
+                break;
+            case "Yoshi2":
+                startPosition = new Vector2(0f, -7.92f);
+                endPosition = new Vector2(0f, -5.47f);
+                break;
+            case "Yoshi3":
+                startPosition = new Vector2(-5.26f, 1.16f);
+                endPosition = new Vector2(-5.26f, 5.61f);
+                break;
+            case "Yoshi4":
+                startPosition = new Vector2(-5.26f, -2.45f);
+                endPosition = new Vector2(-5.26f, 0f);
+                break;
+            case "Yoshi5":
+                startPosition = new Vector2(-5.26f, -7.76f);
+                endPosition = new Vector2(-5.26f, -5.3f);
+                break;
+            case "Yoshi6":
+                startPosition = new Vector2(5.17f, 1.11f);
+                endPosition = new Vector2(5.17f, 5.56f);
+                break;
+            case "Yoshi7":
+                startPosition = new Vector2(5.37f, -2.3f);
+                endPosition = new Vector2(5.37f, 0.15f);
+                break;
+            case "Yoshi8":
+                startPosition = new Vector2(5.56f, -7.81f);
+                endPosition = new Vector2(5.56f, -5.16f);
+                break;
+            
+            /*default:
+                startPosition = new Vector2(0f, 0f);
+                break;*/
+        }
+        //endPosition = startPosition;
+        boxCollider2D.offset = boxOffsetHidden;
+        boxCollider2D.size = boxSizeHidden;
+    }
+
     private IEnumerator ShowHide(Vector2 start, Vector2 end)
     {
-        //Empezamos al inicio
         transform.localPosition = start;
 
-        //Aparece Yoshi
+        // Show the yoshi.
         float elapsed = 0f;
         while (elapsed < showDuration)
         {
             transform.localPosition = Vector2.Lerp(start, end, elapsed / showDuration);
             boxCollider2D.offset = Vector2.Lerp(boxOffsetHidden, boxOffset, elapsed / showDuration);
             boxCollider2D.size = Vector2.Lerp(boxSizeHidden, boxSize, elapsed / showDuration);
-
+            // Update at max framerate.
             elapsed += Time.deltaTime;
             yield return null;
         }
@@ -58,9 +118,10 @@ public class Yoshi : MonoBehaviour
         elapsed = 0f;
         while (elapsed < showDuration)
         {
-            transform.localPosition = Vector2.Lerp(start, end, elapsed / showDuration);
+            transform.localPosition = Vector2.Lerp(end, start, elapsed / showDuration);
             boxCollider2D.offset = Vector2.Lerp(boxOffset, boxOffsetHidden, elapsed / showDuration);
             boxCollider2D.size = Vector2.Lerp(boxSize, boxSizeHidden, elapsed / showDuration);
+            // Update at max framerate.
             elapsed += Time.deltaTime;
             yield return null;
         }
@@ -70,7 +131,7 @@ public class Yoshi : MonoBehaviour
         if (hittable)
         {
             hittable = false;
-            gameManager.Missed(yoshiIndex, yoshiType != YoshiType.heel);
+            GameManager.instance.Missed(yoshiIndex, yoshiType != YoshiType.heel);
         }
     }
     public void Hide()
@@ -85,6 +146,7 @@ public class Yoshi : MonoBehaviour
         if (!hittable)
         {
             Hide();
+            
         }
 
     }
@@ -96,7 +158,7 @@ public class Yoshi : MonoBehaviour
             {
                 case YoshiType.Standard:
                     spriteRenderer.sprite = Smoke;
-                    gameManager.AddScore(yoshiIndex);
+                    GameManager.instance.AddScore(yoshiIndex);
                     StopAllCoroutines();
                     StartCoroutine(QuickHide());
                     hittable = false;
@@ -110,14 +172,15 @@ public class Yoshi : MonoBehaviour
                     else
                     {
                         spriteRenderer.sprite = Smoke;
-                        gameManager.AddScore(yoshiIndex);
+                        GameManager.instance.AddScore(yoshiIndex);
                         StopAllCoroutines();
                         StartCoroutine(QuickHide());
                         hittable = false;
                     }
                     break;
                 case YoshiType.heel:
-                    gameManager.GameOver(1);
+                    spriteRenderer.sprite = Smoke;
+                    GameManager.instance.GameOver(1);
                     break;
                 default:
                     break;
@@ -130,6 +193,7 @@ public class Yoshi : MonoBehaviour
         if (random < heelRate)
         {
             yoshiType = YoshiType.heel;
+            spriteRenderer.sprite = heel;
         }
         else
         {
@@ -157,15 +221,7 @@ public class Yoshi : MonoBehaviour
         float durationMax = Mathf.Clamp(2 - level * 0.1f, 0.01f, 2f);
         duration = Random.Range(durationMin, durationMax);
     }
-    private void Awake()
-    {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        boxCollider2D = GetComponent<BoxCollider2D>();
-        boxOffset = boxCollider2D.offset;
-        boxSize = boxCollider2D.size;
-        boxOffsetHidden = new Vector2(boxOffset.x, -startPosition.y / 2f);
-        boxSizeHidden = new Vector2(boxSize.x, 0f);
-    }
+
     public void Activate(int level)
     {
         SetLevel(level);
