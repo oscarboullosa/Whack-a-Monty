@@ -10,11 +10,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject GameUI;
     [SerializeField] private GameObject OOT;
     [SerializeField] private GameObject DKH;
+    [SerializeField] private GameObject WinText;
     [SerializeField] private TMPro.TextMeshProUGUI TimeText;
     [SerializeField] private TMPro.TextMeshProUGUI ScoreText;
+    
     public static GameManager instance;
 
-    private float startingTime = 100f;
+    private float startingTime = 120f;
 
     private float timeRemaining;
     private HashSet<Yoshi> currentYoshis = new HashSet<Yoshi>();
@@ -93,8 +95,18 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+    public void Win()
+    {
+        WinText.SetActive(true);
+        Time.timeScale = 0f;
+        StopAllCoroutines();
+        playing = false;
+    }
     public void AddScore(int yoshiIndex)
     {
+        if (score == 100){
+            Win();
+        }
         score += 1;
         ScoreText.text = $"{score}";
         timeRemaining += 1;
